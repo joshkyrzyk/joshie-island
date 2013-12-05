@@ -1,0 +1,19 @@
+.media
+  overflow: hidden /* Needed to perform the float clearing trick */
+
+.media__item
+  display: block /* Just in case it gets applied to an <a> tag which it often does */
+  float: left
+  margin: 0 20px 0 0
+
+.media__item > img /* Might target all <img> and make them, display: block in base.css */
+  display: block
+
+.media__body
+  overflow: hidden /* Needed to perform the float clearing trick */
+
+.media--link
+  display: block
+
+.media--link:hover > .media__body .media__title
+  color: red

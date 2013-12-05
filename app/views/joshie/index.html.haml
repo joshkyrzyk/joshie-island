@@ -1,0 +1,66 @@
+.header.section
+  .wrapper.row
+    .large-12.columns
+      %h1 Joshie's Island
+.main-nav.section
+  .wrapper.row
+    .large-12.columns
+      %ul.main-nav__menu
+        %li
+          %a{:href => '#'} Home
+.site-content.section
+  .wrapper.row
+    .main-content.large-8.columns
+      %h2 Main Content
+      
+      .row
+        .large-8.columns
+          .media.panel.top-story
+            %a{:href => '#', :class => 'media__item'}
+              =image_tag "http://placehold.it/120x90"
+            .media__body
+              %a{:href => '#', :class => 'beta'} Header
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elementum nec massa ut ornare. Suspendisse ullamcorper euismod est in molestie.
+        .quicklinks
+      
+      .row
+        .articles
+          .media
+            %a{:href => '#', :class => 'media__item'}
+              =image_tag "http://placehold.it/120x90"
+            .media__body.excerpt__body
+              %a{:href => '#', :class => 'gamma'} Header
+              %p Voluptatibus soluta sunt voluptate. Et commodi doloribus voluptatem exercitationem. Odit et illo quae sed iure nulla quasi.
+          .media
+            %a{:href => '#', :class => 'media__item'}
+              =image_tag "http://placehold.it/120x90"
+            .media__body.excerpt__body
+              %a{:href => '#', :class => 'gamma'} Header
+              %p Voluptatibus soluta sunt voluptate. Et commodi doloribus voluptatem exercitationem. Odit et illo quae sed iure nulla quasi.
+
+    .sidebar.large-4.columns
+      %h2 Sidebar
+      .preview
+        %h3 Popular Articles
+        %ul.preview__menu
+          %li.preview__menu__item
+            %a{:href => '#', :class => 'media media--link'} 
+              .media__item
+                =image_tag "http://placehold.it/80x60"
+              .media__body.preview__body
+                %h3.media__title.gamma Header 01
+                %p Nov 25, 2013
+          %li
+            %a{:href => '#', :class => 'media media--link'} 
+              .media__item
+                =image_tag "http://placehold.it/80x60"
+              .media__body
+                %h3.media__title.gamma Header 02
+                %p Nov 23, 2013
+          %li
+            %a{:href => '#', :class => 'media media--link'} 
+              .media__item
+                =image_tag "http://placehold.it/80x60"
+              .media__body
+                %h3.media__title.gamma Header 03
+                %p Nov 21, 2013
