@@ -11,35 +11,44 @@
 .site-content.section
   .wrapper.row
     .main-content.large-8.columns
-      %h2 Main Content
+      .row
+        .top-story.large-8.columns
+          %h2 Top Story
+          .panel.panel--light.top-story__panel
+            .media
+              %a{:href => '#', :class => 'media__item'}
+                =image_tag "http://placehold.it/120x90"
+              .media__body
+                %a{:href => '#', :class => 'media__title beta'} Header
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elementum nec massa ut ornare. Suspendisse ullamcorper euismod est in molestie.
+        .quicklinks.large-4.columns
+          %h2 Quicklinks
+          %ul.quicklinks__menu
+            %li
+              %a{:href => '#'} Quicklink 01
+            %li
+              %a{:href => '#'} Quicklink 02
+            %li
+              %a{:href => '#'} Quicklink 03
       
       .row
-        .large-8.columns
-          .media.panel.top-story
-            %a{:href => '#', :class => 'media__item'}
-              =image_tag "http://placehold.it/120x90"
-            .media__body
-              %a{:href => '#', :class => 'beta'} Header
-              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elementum nec massa ut ornare. Suspendisse ullamcorper euismod est in molestie.
-        .quicklinks
-      
-      .row
-        .articles
-          .media
-            %a{:href => '#', :class => 'media__item'}
-              =image_tag "http://placehold.it/120x90"
-            .media__body.excerpt__body
-              %a{:href => '#', :class => 'gamma'} Header
-              %p Voluptatibus soluta sunt voluptate. Et commodi doloribus voluptatem exercitationem. Odit et illo quae sed iure nulla quasi.
-          .media
-            %a{:href => '#', :class => 'media__item'}
-              =image_tag "http://placehold.it/120x90"
-            .media__body.excerpt__body
-              %a{:href => '#', :class => 'gamma'} Header
-              %p Voluptatibus soluta sunt voluptate. Et commodi doloribus voluptatem exercitationem. Odit et illo quae sed iure nulla quasi.
+        .articles.large-12.columns
+          .panel.panel--light
+            .media.excerpt
+              %a{:href => '#', :class => 'media__item'}
+                =image_tag "http://placehold.it/120x90"
+              .media__body.excerpt__body
+                %a{:href => '#', :class => 'gamma'} Header
+                %p Voluptatibus soluta sunt voluptate. Et commodi doloribus voluptatem exercitationem. Odit et illo quae sed iure nulla quasi.
+            .media.excerpt
+              %a{:href => '#', :class => 'media__item'}
+                =image_tag "http://placehold.it/120x90"
+              .media__body.excerpt__body
+                %a{:href => '#', :class => 'gamma'} Header
+                %p Voluptatibus soluta sunt voluptate. Et commodi doloribus voluptatem exercitationem. Odit et illo quae sed iure nulla quasi.
 
     .sidebar.large-4.columns
-      %h2 Sidebar
+      
       .preview
         %h3 Popular Articles
         %ul.preview__menu
